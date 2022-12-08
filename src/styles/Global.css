@@ -1,0 +1,157 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.signup-container,
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-container {
+  padding: 100px;
+  box-shadow: 1px -10px 25px rgba(201, 201, 201, 0.25),
+    -1px 10px 25px rgba(147, 147, 147, 0.25);
+}
+
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form-container input {
+  outline: none;
+  border: none;
+  width: 370px;
+  border-bottom: 1px solid #a4a4a4;
+  margin-bottom: 64px;
+  font-size: 18px;
+}
+
+.form-container input::placeholder {
+  color: #b4b4b4;
+}
+
+.form-container .next-btn,
+.submit-btn {
+  display: inline-block;
+  text-decoration: none;
+  justify-content: center;
+  gap: 10px;
+  background: #1678cb;
+  font-weight: 500;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 15px 20px;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.form-container .back-btn {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.password-field {
+  margin-bottom: 0px !important;
+}
+
+.password-warning {
+  color: #7e7e7e;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 100px;
+  color: #7e7e7e;
+}
+
+.signup-text a {
+  color: #1678cb;
+  font-weight: bold;
+}
+/* login in form design */
+.login-btn {
+  margin: 0 auto;
+  display: block;
+}
+
+/* attendence file style */
+
+.attendence-table {
+  width: 100%;
+  text-align: left;
+}
+
+.attendence-heading {
+  padding: 18px 40px;
+  width: 30%;
+  margin: 0 auto 80px;
+  text-align: center;
+  background-color: #1678cb;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 36px;
+}
+
+/* loading animation  */
+.loading {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #85c6ff;
+  border-radius: 50%;
+  border-top: 5px solid #1678cb;
+  animation: rotation 0.5s infinite linear;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.attendence-table {
+  text-align: center;
+}
+
+.thead {
+  background-color: #1678cb;
+  color: #ffffff;
+  height: 50px;
+}
+
+.table-row {
+  height: 50px;
+}
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .signup-container,
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
